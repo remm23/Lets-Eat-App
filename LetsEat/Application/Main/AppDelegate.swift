@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setUpDefaultColors()
         return true
     }
 
@@ -40,7 +41,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func setUpDefaultColors() {
+        // Anything inside the tab bar is black
+        UITabBar.appearance().tintColor = .black
+        UITabBar.appearance().barTintColor = .white
+        
+        // Tab bar normal and selected apperance
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.darkGray], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .selected)
+        
+        // Anything inside the navightion bar is black
+        UINavigationBar.appearance().tintColor = .black
+        UINavigationBar.appearance().barTintColor = .white
+        
+        // Tab and navigation bar are not translucent
+        UITabBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().isTranslucent = false
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
