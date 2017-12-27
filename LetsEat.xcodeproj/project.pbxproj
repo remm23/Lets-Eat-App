@@ -14,6 +14,11 @@
 		CA3FDCDE1FF1ACC7005EF76E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3FDCDD1FF1ACC7005EF76E /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CA3FDCE11FF1ADAA005EF76E /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3FDCDF1FF1ADAA005EF76E /* Explore.storyboard */; };
 		CA3FDCE31FF1ADF5005EF76E /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3FDCE21FF1ADF5005EF76E /* Map.storyboard */; };
+		CA3FDCF61FF1EB90005EF76E /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FDCF51FF1EB90005EF76E /* ExploreViewController.swift */; };
+		CA3FDCF81FF1FD04005EF76E /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA3FDCF71FF1FD04005EF76E /* ExploreData.plist */; };
+		CA3FDCFA1FF1FDE0005EF76E /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FDCF91FF1FDE0005EF76E /* ExploreItem.swift */; };
+		CA3FDCFC1FF344EA005EF76E /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FDCFB1FF344EA005EF76E /* ExploreDataManager.swift */; };
+		CA3FDCFE1FF34C19005EF76E /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FDCFD1FF34C19005EF76E /* ExploreCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		CA3FDCDD1FF1ACC7005EF76E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CA3FDCE01FF1ADAA005EF76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LetsEat/Base.lproj/Explore.storyboard; sourceTree = "<group>"; };
 		CA3FDCE21FF1ADF5005EF76E /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		CA3FDCF51FF1EB90005EF76E /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		CA3FDCF71FF1FD04005EF76E /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
+		CA3FDCF91FF1FDE0005EF76E /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
+		CA3FDCFB1FF344EA005EF76E /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
+		CA3FDCFD1FF34C19005EF76E /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +139,9 @@
 		CA3FDCE91FF1AF4E005EF76E /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				CA3FDCF41FF1EB39005EF76E /* Controller */,
+				CA3FDCF31FF1EB30005EF76E /* Model */,
+				CA3FDCF21FF1EB18005EF76E /* View */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -173,6 +186,32 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		CA3FDCF21FF1EB18005EF76E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA3FDCFD1FF34C19005EF76E /* ExploreCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA3FDCF31FF1EB30005EF76E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA3FDCF71FF1FD04005EF76E /* ExploreData.plist */,
+				CA3FDCF91FF1FDE0005EF76E /* ExploreItem.swift */,
+				CA3FDCFB1FF344EA005EF76E /* ExploreDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA3FDCF41FF1EB39005EF76E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA3FDCF51FF1EB90005EF76E /* ExploreViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +277,7 @@
 				CA3FDCD11FF0870D005EF76E /* LaunchScreen.storyboard in Resources */,
 				CA3FDCE31FF1ADF5005EF76E /* Map.storyboard in Resources */,
 				CA3FDCDB1FF15C7F005EF76E /* Assets.xcassets in Resources */,
+				CA3FDCF81FF1FD04005EF76E /* ExploreData.plist in Resources */,
 				CA3FDCCC1FF0870D005EF76E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3FDCFE1FF34C19005EF76E /* ExploreCell.swift in Sources */,
+				CA3FDCF61FF1EB90005EF76E /* ExploreViewController.swift in Sources */,
 				CA3FDCC71FF0870D005EF76E /* AppDelegate.swift in Sources */,
+				CA3FDCFA1FF1FDE0005EF76E /* ExploreItem.swift in Sources */,
+				CA3FDCFC1FF344EA005EF76E /* ExploreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
