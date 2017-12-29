@@ -11,11 +11,12 @@ import UIKit
 class LocationViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-
+    
+    let manager = LocationDataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        manager.fetch() // <-- fetch data for table view
     }
     
     // How may sections to display
@@ -25,13 +26,13 @@ class LocationViewController: UIViewController, UITableViewDataSource {
     
     // How many rows we want to display
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 15
+        return manager.numberOfItems()
     }
     
     // A cell is created every time this method is called
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for: indexPath) as UITableViewCell
-        cell.textLabel?.text = "A cell"
+        cell.textLabel?.text = manager.locationItem(at: indexPath)
         return cell
         
     }

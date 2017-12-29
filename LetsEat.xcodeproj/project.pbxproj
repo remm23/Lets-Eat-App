@@ -21,6 +21,8 @@
 		CA3FDCFE1FF34C19005EF76E /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FDCFD1FF34C19005EF76E /* ExploreCell.swift */; };
 		CA3FDD031FF642E9005EF76E /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FDD021FF642E9005EF76E /* RestaurantListViewController.swift */; };
 		CA3FDD081FF6BCC8005EF76E /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FDD071FF6BCC8005EF76E /* LocationViewController.swift */; };
+		CA3FDD0A1FF6C5CE005EF76E /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA3FDD091FF6C5CE005EF76E /* Locations.plist */; };
+		CA3FDD0C1FF6C746005EF76E /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FDD0B1FF6C746005EF76E /* LocationDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		CA3FDCFD1FF34C19005EF76E /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		CA3FDD021FF642E9005EF76E /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		CA3FDD071FF6BCC8005EF76E /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		CA3FDD091FF6C5CE005EF76E /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
+		CA3FDD0B1FF6C746005EF76E /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +260,8 @@
 		CA3FDD051FF6BC76005EF76E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CA3FDD091FF6C5CE005EF76E /* Locations.plist */,
+				CA3FDD0B1FF6C746005EF76E /* LocationDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 				CA3FDCE11FF1ADAA005EF76E /* Explore.storyboard in Resources */,
 				CA3FDCD11FF0870D005EF76E /* LaunchScreen.storyboard in Resources */,
 				CA3FDCE31FF1ADF5005EF76E /* Map.storyboard in Resources */,
+				CA3FDD0A1FF6C5CE005EF76E /* Locations.plist in Resources */,
 				CA3FDCDB1FF15C7F005EF76E /* Assets.xcassets in Resources */,
 				CA3FDCF81FF1FD04005EF76E /* ExploreData.plist in Resources */,
 				CA3FDCCC1FF0870D005EF76E /* Main.storyboard in Resources */,
@@ -345,6 +352,7 @@
 			files = (
 				CA3FDD081FF6BCC8005EF76E /* LocationViewController.swift in Sources */,
 				CA3FDCFE1FF34C19005EF76E /* ExploreCell.swift in Sources */,
+				CA3FDD0C1FF6C746005EF76E /* LocationDataManager.swift in Sources */,
 				CA3FDD031FF642E9005EF76E /* RestaurantListViewController.swift in Sources */,
 				CA3FDCF61FF1EB90005EF76E /* ExploreViewController.swift in Sources */,
 				CA3FDCC71FF0870D005EF76E /* AppDelegate.swift in Sources */,
