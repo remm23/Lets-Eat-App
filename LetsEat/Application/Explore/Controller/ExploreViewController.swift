@@ -30,9 +30,16 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath) as! ExploreCell
         let item = manager.explore(at: indexPath)
+        
         if let name = item.name { cell.labelName.text = name}
         if let image = item.image { cell.imgExplore.image = UIImage(named: image)}
+        
         return cell
+    }
+    
+    // dismuss location view controller
+    @IBAction func unwindLocationCancel(segue: UIStoryboardSegue) {
+        
     }
 
 }
